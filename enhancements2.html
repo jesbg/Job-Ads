@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Enhancements" />
+        <meta name="keywords"   content="HTML" />
+        <meta name="author"     content="Jessica Boediono Goenawan" />
+        <meta name="viewport"   content="width=device-width, initial-scale=1"/>
+        <title>Enhancements</title>
+
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+    
+
+    <body class="enbody">
+            <header class="header">
+                <div class="container">
+                <h1><a href="index.html">Je-Tech</a></h1>
+                <nav class="menu">
+                    <div id="navicon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+            <ul>
+                <li class="limenu"><a href="index.html">Home</a></li>
+                <li class="limenu"><a href="jobs.html">Jobs</a></li>
+                <li class="limenu"><a href="apply.html">Apply</a></li>
+                <li class="limenu"><a href="about.html">About</a></li>
+                <li class="limenu"><a href="enhancements2.html">Enhancements</a></li>
+            </ul>
+                </nav> </div>
+             </header>
+
+  
+    <section class="enh">
+        <h2 id="enh2"> Enhancements 2 </h2>
+
+        <aside id="en1">
+    <h2 class="entitle"> Scroll to Top </h2>
+
+    
+    <p>Scroll to top button is necessary because it helps visitor on webpage to come back to top after scrolling deep down, specially when the pages is long,
+        therefore i applied this icon <i class="far fa-arrow-alt-circle-up"></i> on html to recognize it. I also style it on css like change the color, get the transition <br>
+        <br>
+        <img src="styles/images/enh1.png" alt="example1" class="imgexample"> <br>
+        <br>
+        and make sure to locate it on the bottom right.<br>
+        After that we move to java script file, we use get the object element by using querySelector to get the icon <br>
+        <br>
+        <img src="styles/images/enh2.png" alt="example2" class="imgexample"> <br>
+        <br>
+        We create <span>function refreshButtonVisibility</span> so when the user scrolls down 150px from the top of the button, <br>
+        the button will show while when it less than 150px, the button disappear.<br>
+        Next, we followed just like the example.<br>
+        <br>
+        We called back the const where we call the icon (scroll to top), we use <br>
+         <span>addEventListener ("click", () => { }</span> <br>
+         and write the code to scroll to top (0) <br>
+        <span> document.body.scrollTop = 0; </span> is for Safari. <br>
+         <span>document.documentElement.scrollTop = 0; </span> for Chrome, Firefox, IE and Opera.<br>
+        <br>
+         Next we write <span>document.addEventListener("scroll", () => {<br>
+            refreshButtonVisibility(); <br>
+         });</span> <br>
+         so when we scroll, the function refreshButtonVisibility() is working. <br>
+         <br>
+         I applied this to all pages including <a href="index.html">Index</a>, <a href="jobs.html">Jobs</a>, <br>
+         <a href="apply.html">Apply</a>, <a href="about.html">About</a>, and this <a href="enhancements2.html">Enhancements</a> to make visitor easier to scroll back to top. </p>
+
+         <br>
+    <p> Resources : https://www.w3schools.com and https://developer.mozilla.org/ </p>
+
+        
+    </aside>
+
+    <aside id="en2">
+    <h2 class="entitle"> Responsive Testimonial </h2>
+
+   
+        <p>On <a href="index.html">Index</a> page show testimonials or reviews with control under the testimonials box. <br> 
+        There are three of them and the first active one is the middle one. <br>
+        First of all, write all the testimonials and divide it with div on html, for the control panel i used span. <br>
+        Modify all the boxes, texts on css. For the control, i modified it like this <br>
+        <img src="styles/images/css.png" alt ="examplecss" class="imgexample"> <br>
+        The activate part is important, so we able to see which box is active, we make the control wider. <br>
+        And then the next one is JavaScript. Since the Javascript file used for more than one page, <br>
+        and the testimonials only on the <a href="index.html">Index</a> page I wrote <br>
+         <span> if (document.getElementById("indexpage")) { } </span> inside the init function<br>
+         <img src="styles/images/enh3.png" alt="example2" id="eximg"><br>
+         We get all three control var and the event is <span>on click</span>, next write all the function one by one<br>
+         On the javascript i wrote, when the control one is clicked, <br>
+         then the testimonial box will translateX(820px) and activate the wider control while remove the active control two and three. <br>
+         Do the same for the control two and three, for the three since its going the opposite, the translateX(-820px) <br>
+         The second one is the active at first, so no need to transform so the translateX is 0 px. <br>
+         Try to take a look at the code just like the example from the image<br>
+         And it is done, try to click the control panel.<br>
+         <br>
+         Resources : https://www.w3schools.com and youtube : Easy Tutorials Hindi </p>
+           
+        </aside>
+
+
+        <!--Another Enhancements-->
+
+        <aside class="additional1">
+        <h4 class="entitle"> Responsive Navbar </h4>
+        <p> I want to make the website is suitable for all the device <br>
+        That's why i add the <span>Hamburger icon</span> that looks like this <i class="fas fa-bars"></i> <br>
+        I did a settings to my css, <br> so the icon will only appear when the device width less than 767.<br>
+        For device like laptop or device with width more than 767 <br> will looks like the basic one.<br>
+        Move to the JS file, so when visitor click the icon, <br>
+        the choices of menu will be display flex, not like the basic one which is inline. <br>
+        <img src="styles/images/enh4.png" alt ="example4" class="imgexample"><br>
+        I applied this to all pages <a href="index.html">Index</a>, <a href="jobs.html">Jobs</a>, <br>
+        <a href="apply.html">Apply</a>, <a href="about.html">About</a>, and this <a href="enhancements2.html">Enhancements</a>
+        <br> <br>
+        I learnt it from https://www.w3schools.com and youtube  : CodingNepal</p>
+        </aside>
+   
+        
+        <aside class="additional2">
+            <h4 class="entitle"> Digital Clock </h4>
+            <p> On <a href="index.html">Index</a> page there is a clock for decoration<br>
+                To make this we need to set up first the HTML like this <br>
+                <img src="styles/images/clockhtml.png" alt ="htmlclock" id="imgex"><br>
+                And then modify colors and everything with css, <br>
+                i made the color transparent with shadow. <br>
+                The important part is the JavaScript to make the clock run. <br>
+                <img src="styles/images/enh5.png" alt ="example5" class="imgexample"><br>
+                Since the Javascript file used for more than one page, <br>
+                while the clock only on the <a href="index.html">Index</a> page I wrote <br>
+                 <span> if (document.getElementById("indexpage")) { } </span><br>
+                And then i called the clock function which <br> already written get hours,minutes and seconds <br>
+                Also, make var for hours,minutes and seconds by  <span>document.getElementById("")</span> <br>
+                After that, the hours will run in the hours part<br>
+                 for instance, <span>hours.innerHTML = h;</span> (var h = new Date().getHours();) <br>
+                Do the same thing for minutes and second, after that do not forget to set the interval for clock. <br> 
+                <br>
+                Resources : https://www.w3schools.com and youtube : Coding Artist</p>
+            </aside>
+
+   
+    </section>
+
+
+    <a href="#" class="buttontop"><i class="far fa-arrow-alt-circle-up"></i></a>
+          
+    <!--Footer-->
+    <footer class="footer">
+        <p> <a href="https://swinburne.edu.au/">&#169; Swinburne University of Technology</a><br>
+             Mark up by: <a href="mailto:103523649@student.swin.edu.au" title="mail to">Jessica Boediono Goenawan</a>
+        </p>
+        </footer>
+        <script src="scripts/enhancements.js"></script>
+    </body>
+
+    </html>

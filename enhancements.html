@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Enhancements" />
+        <meta name="keywords"   content="HTML" />
+        <meta name="author"     content="Jessica Boediono Goenawan" />
+         <meta name="viewport"   content="width=device-width, initial-scale=1"/>
+        <title>Enhancements</title>
+
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+    
+
+    <body class="enbody">
+            <header class="header">
+                <div class="container">
+                <h1><a href="index.html">Je-Tech</a></h1>
+                <nav class="menu">
+                    <div id="navicon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+            <ul>
+                <li class="limenu"><a href="index.html">Home</a></li>
+                <li class="limenu"><a href="jobs.html">Jobs</a></li>
+                <li class="limenu"><a href="apply.html">Apply</a></li>
+                <li class="limenu"><a href="about.html">About</a></li>
+                <li class="limenu"><a href="enhancements.html">Enhancements</a></li>
+            </ul>
+                </nav> </div>
+             </header>
+
+  
+    <section class="enh">
+        <h2 id="enh2"> Enhancements </h2>
+
+        <aside id="en1">
+    <h2 class="entitle"> Animation </h2>
+
+    
+    <p>CSS Animation is a part of element can change and move with a certain move and duration.<br>
+    We can do many types of animation and imply it on many group or elements.<br>
+    Firstly, We style the elements with <span>Animation</span> property and it sub-properties<br>
+    e.g sub-properties for animation are : </p>
+    <ul>
+        <li><span>animation-name</span>
+            <p>Make a certain name for the @keyframes rule </p>
+        </li>
+        <li><span>animation-duration</span>
+            <p> Settings the length of time of an animation in one cycle or one style</p>
+        </li>
+        <li><span>animation-direction</span>
+            <p>Set up the direction of an animation whether it animated forwards, backwards or alternate cycles</p>
+        </li>
+        <li><span>animation-delay</span>
+            <p>Decide how long a delay to start an animation</p>
+        </li>
+        <li><span>animation-timing-function</span>
+            <p>Configures a speed curve of an animation </p>
+        </li>
+        <li><span>animation-iteration-count</span>
+            <p>Set the number of times the animation should run </p>
+        </li>
+        <li><span>animation-fill-mode</span>
+            <p>Settings the style for an element when the animation not moving or playing</p>
+        </li>
+    </ul>
+
+    <p>After set up all the animations properties, we need to use @keyframes rule. <br>
+    Keyframes describes how the animation should animated at specific times. <br>
+    For instance, the very first animation is 0% and 100% is the end. <br>
+    We can also divide it into 5 like 0%, 25%, 50%, 75% and 100%.<br>
+     We set the @keyframes up to ourself. </p>
+
+   <p> For make it easier, i make an example of the CSS Animation Code</p>
+    <p><img src="styles/images/ex1.png" alt="example1" class="imgexample"></p>
+    <p>The example shows that the animation duration is 2 second<br>
+    In the period of time, <br>
+    the background color will change from blueviolet to plum and pink</p>
+
+    <p> I implied the example above on <a href="about.html">About</a> page where an aside on the left 
+        changes it background-color.
+    </p>
+
+    <p><img src="styles/images/ex2.png" alt="example2" class="imgexample"><br>
+        We can also combine all the sub-properties into one like the example above.<br>
+    The second example indicates that the div element will animated infinite <br>
+    with alternate direction in 2 second duration.</p>
+
+    <p>
+        I implied the bounce animation for h3 which are on <a href="index.html">Index</a> page <br>
+        the title for "About Us" and "Services" and <a href="jobs.html">Jobs</a> pages.<br>
+        They're like bouncing slowly because i made the transitionY (up and down).<br>
+        I also implied on "Newsletter" where the element moving right and left (TransitionX) <br>
+    </p>
+
+
+    <p> Animation will make the website more interesting <br>
+        so the readers won't get bored with just a simple text or element.<br> <br>
+        Resources : https://www.w3schools.com and https://developer.mozilla.org/ </p>
+
+        
+    </aside>
+
+    <aside id="en2">
+    <h2 class="entitle"> Media Queries </h2>
+
+   
+        <p>Media queries give us an opportunity to edit the website at a certain size of device.<br>
+        Since nowadays, there are many type of devices with different sizes (e.g phone, tablet, desktop, laptop)<br>
+        Media queries help us to build a flexible layout.</p>
+        
+        <p> For Media Query we use <span>@media syntax</span>, followed by the resolution of the device (e.g min-width, max-width) </p>
+        <p> To exemplify :  </p>
+        <p> <img src="styles/images/ex3.png" alt ="example3" class="imgexample"> </p>
+         <p> As we can see from example above,<br>
+             it shows that on media with max-width 480px there will be outset border top and bottom<br>
+            On the other hand, with min-width 481px and max width 767px it has dashed border top and bottom</p>
+       
+
+        I personally did 4 additional responsive layout,
+        <ol>
+            <li><span>Media with maximum width 480px</span>
+            <p>Mostly it's mobile phone size (Potrait), I madified for mobile phone layout<br>
+                On top on <a href="index.html">Index</a> page we can see the Je-Tech on menu bar it has dotted border. <br>
+                Next one is on "services" section, The columns are on grid <br>
+                not like the original desktop layout the columns are inline.<br>
+                I also added outset border and make the border-radius into 50% <br>
+                This only can be seen on device with maximum width 480px</p></li>
+
+            <li><span>Media with minimum width 481px and maximum width 767px</span>
+            <p>It is usually for mobile phone(landscape) or small tablet<br>
+                Just like the potrait one i designed on "services" section, The columns are on grid <br>
+                not like the original desktop layout the columns are inline.<br>
+                I also added dashed border with 50% border-radius <br>
+                On <a href="about.html">About</a> page , The profile card is full width with margin=0 <br>
+                and the asides are on top of the profile card.</p></li>
+
+            <li><span>Media with minimum width 768px and maximum width 1024px</span>
+            <p> Commonly layout for tablets and iPad <br>
+                I made a border-radius for Preferable Aside on <a href="jobs.html">Jobs</a> page.
+                On <a href="about.html">About</a> page, i put the quote on top of the profile card. <br>
+                While the other aside float right and the profile card below the quote float left. </p></li>
+
+            <li><span>Media with minimum width 1025px and maximum width 1241px</span>
+            <p> The sizes are usually use for laptops and desktops<br>
+                I didn't modified a lot , i just made it more neat.<br> <br>
+         Resources : https://www.w3schools.com and https://developer.mozilla.org/ </p>
+            </li>
+        </ol>
+        </aside>
+
+
+        <!--Another Enhancements-->
+
+        <aside class="additional1">
+        <h4 class="entitle"> 360 Rotate Transition </h4>
+        <p> CSS Transition is more simple rather than animation </p>
+    <p> The common one is when the mouse hovers over an element and <br>
+         the element react as the command</p>
+    <p> Transition for hover <br>
+         on <a href="about.html">About</a> page there's a quote <br>
+         which when someone drag the cursor into<br>
+          the box, the box will automatically rotate to 360degrees.<br>
+        <br> I learnt it from https://www.w3schools.com </p>
+        </aside>
+   
+        
+        <aside class="additional2">
+            <h4 class="entitle"> Linear Gradient Background </h4>
+            <p> On <a href="apply.html">Apply</a> page for the Application form<br>
+                I made the linear gradient background with 3 colors<br>
+                I used background: <span>linear-gradient()</span></p>
+            </aside>
+
+    <aside class="additional1">
+        <h4 class="entitle"> Font Changes </h4>
+        <p> I added additional fonts by import it from google.<br>
+            I added the stylesheet on HTML <br>
+            and apply the font on CSS with <span>font-family</span>
+        </p>
+        </aside>
+
+        <aside class="additional2">
+            <h4 class="entitle"> Logo </h4>
+            <p> I saved social media logo on google and use <span>a href</span><br>
+               for my footer on <a href="jobs.html">Jobs</a> page and <a href="apply.html">Apply</a> page<br>
+               Not only email (mailto) but also telephone and instagram link.
+            </p>
+            </aside>
+    </section>
+
+
+    <a href="#" class="buttontop"><i class="far fa-arrow-alt-circle-up"></i></a>
+          
+    <!--Footer-->
+    <footer class="footer">
+        <p> <a href="https://swinburne.edu.au/">&#169; Swinburne University of Technology</a><br>
+             Mark up by: <a href="mailto:103523649@student.swin.edu.au" title="mail to">Jessica Boediono Goenawan</a>
+        </p>
+        </footer>
+        <script src="scripts/enhancements.js"></script>
+    </body>
+
+    </html>
